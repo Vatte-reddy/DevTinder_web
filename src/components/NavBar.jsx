@@ -7,6 +7,8 @@ import axios from 'axios'
 import { URL } from '../utilis/constants'
 import { removeUser } from '../utilis/userSlice'
 
+
+
 const NavBar = () => {
   const storeUser = useSelector((store) => store.user)
   // Accommodate situations where the response was wrapped in { data: user }
@@ -66,7 +68,10 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <a>Settings</a>
+              <Link to="/connections">Connections</Link>
+            </li>
+            <li>
+              <Link to="/requests">Requests</Link>
             </li>
             <li>
               <a onClick={handleLogOut}>Logout</a>

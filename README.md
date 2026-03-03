@@ -28,7 +28,17 @@
 ->get feed and add it to store
 ->build the user card on feed
 ->Edit profile feature
-->
+->show toast and save profile
+->new page to see connections
+->new page to see connection requests
+->feature -Accept or reject connection requests
+
+
+->remaining features
+-send/ignore the user from feed
+-signup new User
+->E2E testing
+
 
 Body
   NavBar

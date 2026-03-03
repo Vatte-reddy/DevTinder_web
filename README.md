@@ -25,7 +25,10 @@
 ->no other routers accesing without login
 ->if token is not present then redirect to login page
 ->logout feature
-->profile
+->get feed and add it to store
+->build the user card on feed
+->Edit profile feature
+->
 
 Body
   NavBar

@@ -1,7 +1,8 @@
 import React from 'react'
 
-const   Footer = () => {
+const  Footer = () => {
   return (
+    <div className="min-h-screen">
 <footer className="footer footer-horizontal bg-neutral text-neutral-content p-10 fixed bottom-0 w-full">
       <nav>
     <h6 className="footer-title">Services</h6>
@@ -56,6 +57,7 @@ const   Footer = () => {
     </div>
   </nav>
 </footer>
+    </div>
   )
 }
 

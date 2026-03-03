@@ -10,8 +10,8 @@ import Feed from './Feed'
 const Login = () => {
   const navigate = useNavigate()
  
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   const dispatch=useDispatch()
 
   const handleSubmit = async () => {
@@ -48,7 +48,7 @@ const Login = () => {
       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
     </g>
   </svg>
-  <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="mail@site.com" required />
+  <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}  required />
 </label>
 <div className="validator-hint hidden">Enter valid email address</div>
 
@@ -72,7 +72,7 @@ const Login = () => {
     value={password}
     onChange={(e) => setPassword(e.target.value)}
     required
-    placeholder="Password"
+   
     minLength="8"
     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
@@ -90,6 +90,8 @@ const Login = () => {
     </div>
   </div>
 </div>
+    
+
    
     </div>
   )

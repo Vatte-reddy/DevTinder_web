@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UserCard from "./UserCard";
+import UserCard from "./userCard";
 import axios from "axios";
 import { URL } from "../utilis/constants";
 import { useDispatch } from "react-redux";
@@ -8,12 +8,12 @@ import { addUser } from "../utilis/userSlice";
 const EditProfile = ({ user }) => {
   const dispatch = useDispatch();
 
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [photoUrl, setPhotoUrl] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
-  const [about, setAbout] = useState("");
+  const [firstName, setFirstName] = useState("user.firstName");
+  const [lastName, setLastName] = useState("user.lastName");
+  const [photoUrl, setPhotoUrl] = useState("user.photoUrl");
+  const [age, setAge] = useState("user.age");
+  const [gender, setGender] = useState("user.gender");
+  const [about, setAbout] = useState("user.about");
   const [error, setError] = useState("");
   const [showToast, setShowToast] = useState(false);
 

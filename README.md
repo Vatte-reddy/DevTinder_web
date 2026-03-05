@@ -46,3 +46,12 @@ Body
   Route=/login=>Login
   Route=/Connection=>Connections
   Router=/profile=>profile 
+
+
+  Deployment
+   signup for AWS cloud
+   initate the instance
+   change 400 <secret.pem>
+   ssh -i "devTinder secreate.pem" ubuntu@ec2-3-26-45-216.ap-southeast-2.compute.amazonaws.com
+   intall node version 
+   git clone

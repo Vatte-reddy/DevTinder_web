@@ -52,6 +52,48 @@ Body
    signup for AWS cloud
    initate the instance
    change 400 <secret.pem>
+   Frontend
    ssh -i "devTinder secreate.pem" ubuntu@ec2-3-26-45-216.ap-southeast-2.compute.amazonaws.com
    intall node version 
    git clone
+   install dependices (npm install) and npm run  build
+   sudo apt update
+   sudo apt install nginx
+   sudo systemctl start nginx
+    sudo systemctl enable nginx
+    sudo scp -r dist/* /var/www/html/
+    Enable port :80
+
+    Backend
+    ->allowed ec2 instance public ip in mongoo db
+    ->installe pm2 by using cmd npm install pm2 -g
+    ->pm2 start npm -- start
+    ->pm2 logs
+    ->pm2 list,pm2 flush <name>,pm2 stop<name> ,pm2 delete <name>
+
+
+
+     Frontend = http://3.26.45.216/
+    Backend = http://3.26.45.216:1818/
+
+    Domain name = devtinder.com => 43.204.96.49
+
+    Frontend = devtinder.com
+    Backend = devtinder.com:1818 => devtinder.com/api
+
+    nginx config : 
+
+    server_name 3.26.45.216;
+
+    location /api/ {
+        proxy_pass http://localhost:1818/;  # Pass the request to the Node.js app
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+
+
+

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { addFeed } from '../utilis/feedSlice'
 import { URL } from '../utilis/constants'
-import UserCard from './UserCard'
+import UserCard from './userCard'
 
 const Feed = () => {
   const dispatch = useDispatch()

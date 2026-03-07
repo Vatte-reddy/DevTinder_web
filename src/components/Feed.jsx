@@ -13,7 +13,7 @@ const Feed = () => {
     if (feedData && feedData.length > 0) return
 
     try {
-      const res = await axios.get(URL + '/feed', {
+      const res = await axios.get(URL + '/user/feed', {
         withCredentials: true,
       })
 

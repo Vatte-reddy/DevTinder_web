@@ -32,7 +32,7 @@ const Requests = () => {
 
     const fetchRequest = async () => {
         try {
-            const res = await axios.get(URL + "/user/requests/received", {
+            const res = await axios.get(URL + "/user/requests", {
                 withCredentials: true,
             })
             dispatch(addRequests(res?.data?.data))
